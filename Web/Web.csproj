@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shop.Web</RootNamespace>
+    <AssemblyName>Shop.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LtpPageControl, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\BookTypeAdd.aspx" />
+    <Content Include="Admin\BookTypeEdit.aspx" />
+    <Content Include="Admin\BookTypeList.aspx" />
+    <Content Include="Admin\head.aspx" />
+    <Content Include="Admin\inc\css.css" />
+    <Content Include="Admin\inc\style.css" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Left.aspx" />
+    <Content Include="Admin\left.files\admin_left_1.gif" />
+    <Content Include="Admin\left.files\admin_left_2.gif" />
+    <Content Include="Admin\left.files\admin_left_9.gif" />
+    <Content Include="Admin\left.files\images\graph.gif" />
+    <Content Include="Admin\left.files\images\index_16.gif" />
+    <Content Include="Admin\left.files\images\index_18.gif" />
+    <Content Include="Admin\left.files\images\index_19.gif" />
+    <Content Include="Admin\left.files\images\index_20.gif" />
+    <Content Include="Admin\left.files\images\index_21.gif" />
+    <Content Include="Admin\left.files\images\index_22.gif" />
+    <Content Include="Admin\left.files\images\index_23.gif" />
+    <Content Include="Admin\left.files\images\spacer.gif" />
+    <Content Include="Admin\left.files\title.gif" />
+    <Content Include="Admin\left.files\titles.gif" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\main.aspx" />
+    <Content Include="Admin\UserManagerEdit.aspx" />
+    <Content Include="Admin\UserManagerList.aspx" />
+    <Content Include="Admin\UserManagerAdd.aspx" />
+    <Content Include="content\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="content\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="content\zTreeStyle\img\diy\2.png" />
+    <Content Include="content\zTreeStyle\img\diy\3.png" />
+    <Content Include="content\zTreeStyle\img\diy\4.png" />
+    <Content Include="content\zTreeStyle\img\diy\5.png" />
+    <Content Include="content\zTreeStyle\img\diy\6.png" />
+    <Content Include="content\zTreeStyle\img\diy\7.png" />
+    <Content Include="content\zTreeStyle\img\diy\8.png" />
+    <Content Include="content\zTreeStyle\img\diy\9.png" />
+    <Content Include="content\zTreeStyle\img\line_conn.gif" />
+    <Content Include="content\zTreeStyle\img\loading.gif" />
+    <Content Include="content\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="content\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="content\zTreeStyle\zTreeStyle.css" />
+    <Content Include="js\calendar1.js" />
+    <Content Include="js\CheckBox.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery.ztree.core-3.5.min.js" />
+    <Content Include="Test\BookTypeTest.aspx" />
+    <Content Include="Test\BookTypeTest2.aspx" />
+    <Content Include="Test\ZTree.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\BookTypeAdd.aspx.cs">
+      <DependentUpon>BookTypeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookTypeAdd.aspx.designer.cs">
+      <DependentUpon>BookTypeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookTypeEdit.aspx.cs">
+      <DependentUpon>BookTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookTypeEdit.aspx.designer.cs">
+      <DependentUpon>BookTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookTypeList.aspx.cs">
+      <DependentUpon>BookTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookTypeList.aspx.designer.cs">
+      <DependentUpon>BookTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookTypeRemove.ashx.cs">
+      <DependentUpon>BookTypeRemove.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\head.aspx.cs">
+      <DependentUpon>head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\head.aspx.designer.cs">
+      <DependentUpon>head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MyPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagerEdit.aspx.cs">
+      <DependentUpon>UserManagerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagerEdit.aspx.designer.cs">
+      <DependentUpon>UserManagerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManagerList.aspx.cs">
+      <DependentUpon>UserManagerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagerList.aspx.designer.cs">
+      <DependentUpon>UserManagerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManagerAdd.aspx.cs">
+      <DependentUpon>UserManagerAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagerAdd.aspx.designer.cs">
+      <DependentUpon>UserManagerAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManagerRemove.ashx.cs">
+      <DependentUpon>UserManagerRemove.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BookTypeTree.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\BookTypeTest.aspx.cs">
+      <DependentUpon>BookTypeTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\BookTypeTest.aspx.designer.cs">
+      <DependentUpon>BookTypeTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\BookTypeTest2.aspx.cs">
+      <DependentUpon>BookTypeTest2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\BookTypeTest2.aspx.designer.cs">
+      <DependentUpon>BookTypeTest2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VCode.ashx.cs">
+      <DependentUpon>VCode.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\UserManagerRemove.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VCode.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\BookTypeRemove.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Shop.BLL
+{
+    public partial class BookType
+    {
+        //简单工厂
+        //private readonly Shop.IDAL.IBookType dal = Shop.DalFactroy.SimpleFactory.GetBookTypeDal();
+
+        //抽象工厂
+        private readonly Shop.IDAL.IBookType dal = Shop.DalFactroy.AbstractFactory.GetBookTypeDal();
+
+        public bool Delete(Shop.Model.BookType booktype)
+        {
+            return Delete(booktype.TypeId);
+        }
+    }
+}
+ 
