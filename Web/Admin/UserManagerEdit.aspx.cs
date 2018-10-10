@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace Shop.Web.Admin
 {
     public partial class UserManagerEdit : MyPageBase//  System.Web.UI.Page
@@ -13,7 +14,7 @@ namespace Shop.Web.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             Shop.BLL.UserManager umBll = new Shop.BLL.UserManager();
-            if (IsPostBack)
+            if (IsPostBack)//判断是否回传
             {
                 //修改处理
                 bool isPwdEdit = false;
@@ -32,7 +33,10 @@ namespace Shop.Web.Admin
 
                 if (umBll.Update(UMModel, isPwdEdit))
                 {
-                    Response.Redirect("UserManagerList.aspx");
+                    //弹出提示框，确定后跳转页面
+                    Response.Write("<script language=javascript>alert('修改成功！即将跳转列表页');window.location = 'UserManagerList.aspx';</script>");
+                    //Response.Redirect("UserManagerList.aspx");
+                    //MsgBox("修改成功，将跳转列表页", "UserManagerList.aspx");
                 }
                 else
                 {
@@ -42,7 +46,7 @@ namespace Shop.Web.Admin
             else
             {
                 //修改展示
-                int id = int.Parse(Request["id"]);
+                int id = int.Parse(Request["id"]);//获取传递的id
                 
                 UMModel = umBll.GetModel(id);
             }

@@ -20,6 +20,7 @@ namespace Shop.Web.Admin
             Shop.BLL.BookType btBll = new Shop.BLL.BookType();
             if (btBll.Delete(id))
             {
+                //成功返回1
                 context.Response.Write(1);
             }
             else

@@ -13,9 +13,8 @@ namespace Shop.Web.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             Shop.BLL.BookType btBll = new Shop.BLL.BookType();
-            if (!IsPostBack)
+            if (!IsPostBack)//初次加载请求
             {
-                //初次加载
                 int id = int.Parse(Request["id"]);
 
                 BtModel = btBll.GetModel(id);
